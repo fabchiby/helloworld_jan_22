@@ -22,6 +22,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'mvn test'
+                echo 'keep pushing'
             }
         }
         stage('Build Image') {
